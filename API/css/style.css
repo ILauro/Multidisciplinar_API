@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#container{
+    min-height: 100vh;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3em 5fr 5em;
+    grid-template-areas: 
+    "tt tt tt tt tt "
+    ". . . . . "
+    ". m . s . "
+    ". . . . . ";
+}
+#titulo{
+    grid-area: tt;
+    background-color: #2369B3;
+}
+#txt{
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+}
+
+/* #line{
+    background-color: #0E4097;
+    height: 1.5em;
+    align-self: flex-end;
+} */
+
+#main{ grid-area: m; }
+#side { grid-area: s; }
+#main, #side{
+    background-color: #E8EBED;
+    border-radius: 12px;
+    
+}
