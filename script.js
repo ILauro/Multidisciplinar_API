@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
- fetch("https://covid19-brazil-api.now.sh/api/report/v1/countries", {
-  "method": "GET"
-})
-.then(async response => await console.log(response.body.getReader()))
-.catch(err => console.error(err));
+var xhr = new XMLHttpRequest();
+xhr.open("GET","https://covid19-brazil-api.now.sh/api/report/v1/countries");
+xhr.send(null);
+
+xhr.onreadystatechange = function() {
+    if(xhr.readyState === 4){
+        console.log(JSON.parse(xhr.responseText)
+        );
+    }
+}
 
 
 });
