@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-var xhr = new XMLHttpRequest();
-xhr.open("GET","https://covid19-brazil-api.now.sh/api/report/v1/countries");
-xhr.send(null);
+var data = new XMLHttpRequest();
+data.open("GET","https://covid19-brazil-api.now.sh/api/report/v1/countries");
+data.send(null);
 
-xhr.onreadystatechange = function() {
-    if(xhr.readyState === 4){
-        console.log(JSON.parse(xhr.responseText)
+data.onreadystatechange = function() {
+    if(data.readyState === 4){
+        console.log(JSON.parse(data.responseText)
         );
     }
 }
