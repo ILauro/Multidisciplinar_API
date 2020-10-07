@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
- fetch("https://covid19-brazil-api.now.sh/api/report/v1/germany", {
+ fetch("https://covid19-brazil-api.now.sh/api/report/v1/countries", {
   "method": "GET"
 })
 .then(async response => await console.log(response.json()))
