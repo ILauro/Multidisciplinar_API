@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  fetch("https://covid19-brazil-api.now.sh/api/report/v1", {
   "method": "GET"
 })
-.then(response => console.log(response.body))
+.then(response => console.log(JSON.parse(response)))
 .catch(err => console.error(err));
 
 
