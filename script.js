@@ -31,6 +31,7 @@ function res() {
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4){
             document.getElementById('bt').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE;
+
             }
         }
 };
