@@ -36,6 +36,8 @@ body,html{
     background-color: #E8EBED;
     border-radius: 12px; 
     margin: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #call{

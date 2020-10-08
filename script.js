@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     });
 
-
-    
 function res() {
     const url = 'http://www.transparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=202006&codigoIbge=' + document.getElementById("select").value + '&pagina=1';
     
@@ -30,7 +28,7 @@ function res() {
     
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4){
-            document.getElementById('bt').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE;
+            document.getElementById('cidade').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE;
 
             }
         }
