@@ -17,8 +17,8 @@ body,html{
     grid-template-rows: 1fr 3em 5fr 5em;
     grid-template-areas: 
     "tt tt tt tt tt "
-    ". . . . . "
-    ". m . s . "
+    ". c c c . "
+    ". m m m . "
     ". . . . . ";
 }
 #titulo{
@@ -31,16 +31,19 @@ body,html{
     color: white;
 }
 
-/* #line{
-    background-color: #0E4097;
-    height: 1.5em;
-    align-self: flex-end;
-} */
-
-#main{ grid-area: m; }
-#side { grid-area: s; }
-#main, #side{
+#main{ 
+    grid-area: m;
     background-color: #E8EBED;
-    border-radius: 12px;
-    
+    border-radius: 12px; 
+    margin: 10px;
+}
+
+#call{
+    grid-area: c;
+    padding: 10px;
+    background-color: #5795be71;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 8px 10px 1px 10px;
 }
