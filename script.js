@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
 var data = new XMLHttpRequest();
-data.open("GET","https://covid19-brazil-api.now.sh/api/report/v1/countries");
+data.open("GET","http://www.transparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=202006&codigoIbge=%094312401&pagina=1");
 data.send(null);
 
 data.onreadystatechange = function() {
