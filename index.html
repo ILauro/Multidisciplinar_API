@@ -16,42 +16,36 @@
 
             <div id="call">
             <select id="select">
-                <option value="4300570" class="cidades">Alto Feliz</option>
-                <option value="4301651" class="cidades">Barão</option>
-                <option value="4302352" class="cidades">Bom Princípio</option>
-                <option value="4302659" class="cidades">Brochier</option>
-                <option value="4304689" class="cidades">Capela de Santana</option>
-                <option value="4308102" class="cidades" selected>Feliz</option>
-                <option value="4309555" class="cidades">Harmonia</option>
-                <option value="4311643" class="cidades">Linha Nova</option>
-                <option value="4311791" class="cidades">Maratá</option>
-                <option value="4312401" class="cidades">Montenegro</option>
-                <option value="4314035" class="cidades">Pareci Novo</option>
-                <option value="4316501" class="cidades">Salvador do Sul</option>
-                <option value="4318481" class="cidades">São José do Hortêncio</option>
-                <option value="4319356" class="cidades">São Pedro da Serra</option>
-                <option value="4319505" class="cidades">São Sebastião do Caí</option>
-                <option value="4319752" class="cidades">São Vendelino</option>
-                <option value="4322251" class="cidades">Tupandi</option>
-                <option value="4322541" class="cidades">Vale Real</option>
+                <option value="4300570" class="cidades" id="Alto Feliz">Alto Feliz</option>
+                <option value="4301651" class="cidades" id="Barão">Barão</option>
+                <option value="4302352" class="cidades" id="Bom Princípio">Bom Princípio</option>
+                <option value="4302659" class="cidades" id="Brochier">Brochier</option>
+                <option value="4304689" class="cidades" id="Capela de Santana">Capela de Santana</option>
+                <option value="4308102" class="cidades" id="Feliz" selected>Feliz</option>
+                <option value="4309555" class="cidades" id="Harmonia">Harmonia</option>
+                <option value="4311643" class="cidades" id="Linha Nova">Linha Nova</option>
+                <option value="4311791" class="cidades" id="Maratá">Maratá</option>
+                <option value="4312401" class="cidades" id="Montenegro">Montenegro</option>
+                <option value="4314035" class="cidades" id="Pareci Novo">Pareci Novo</option>
+                <option value="4316501" class="cidades" id="Salvador do Sul">Salvador do Sul</option>
+                <option value="4318481" class="cidades" id="São José do Hortêncio">São José do Hortêncio</option>
+                <option value="4319356" class="cidades" id="São Pedro da Serra">São Pedro da Serra</option>
+                <option value="4319505" class="cidades" id="São Sebastião do Caí">São Sebastião do Caí</option>
+                <option value="4319752" class="cidades" id="São Vendelino">São Vendelino</option>
+                <option value="4322251" class="cidades" id="Tupandi">Tupandi</option>
+                <option value="4322541" class="cidades" id="Vale Real">Vale Real</option>
                 </select>
                 <button id="bt" onclick="res()">Pesquisar</button>
             </div>
             
             <div id="main">
-                <h1 id="cidade">Feliz</h1>
+                <h1 id="cidade">---</h1>
                 <div id="info">
                   <div id="cp1">
-                    <p >Código IBGE: </p> <span id="codigoIBGE"></span>
+                    <p >Código IBGE: </p> <span id="codigoIBGE">---</span>
                   </div>
                   <div id="cp1">
-                    <p >População: </p> <span id="populacao"></span>
-                  </div>
-                  <div id="cp1">
-                    <p >UF: </p> <span id="uf"></span>
-                  </div>
-                  <div id="cp1">
-                    <p >País: </p> <span id="pais"></span>
+                    <p >População: </p> <span id="populacao">---</span>
                   </div>
                   
     
@@ -106,8 +100,20 @@
                     </table>
                 </div>
                 <div id="mapa">
-                  <img id="mapasrc">
+                  <img id="mapasrc" src="cidades/26300229.png">
+                  <h1>Comentários recentes: </h1>
+                  <p id="pc1">---</p>
+                  <p id="pc2">---</p>
+                  <p id="pc3">---</p>
+                  <p id="pc4">---</p>
+                  <p id="pc5">---</p>
                 </div>
+                <div id="feedback">
+                    <input type="text" id="op" name="op" placeholder="Envie sua opinião">
+                    <button id="bt" onclick="alerta()">Enviar</button>
+                  
+                  
+              </div>
             </div>
         </div>
     </body>

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", res());
-    
+
+var cidade;
+
 var pop = [];
 pop[4300570] = "2.869"; pop[4301651] = "6.202"; pop[4302352] = "14.255"; pop[4302659] = "5.104"; pop[4304689] = "12.064"; pop[4308102] = 13.208; 
 pop[4309555] = "4.917"; pop[4311643] = "1.719"; pop[4311791] = "2.702";pop[4312401] = "64.788"; pop[4314035] = "3.862"; pop[4316501] = "7.889"; 
@@ -23,11 +25,10 @@ function res() {
                 document.getElementById('mapasrc').src = "cidades/" + JSON.parse(xhr.responseText)['0'].id + ".png";
                 document.getElementById('codigoIBGE').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].codigoIBGE;
                 document.getElementById('populacao').innerHTML = pop[JSON.parse(xhr.responseText)['0']['municipio'].codigoIBGE] + " pessoas";
-                document.getElementById('uf').innerHTML = capitalizeFirstLetter(JSON.parse(xhr.responseText)['0']['municipio']['uf'].nome);
-                document.getElementById('pais').innerHTML = capitalizeFirstLetter(JSON.parse(xhr.responseText)['0']['municipio'].pais);
                 document.getElementById('p1').innerHTML = JSON.parse(xhr.responseText)['0'].quantidadeBeneficiados;
                 document.getElementById('v1').innerHTML = "R$ " + (JSON.parse(xhr.responseText)['0'].valor).toLocaleString('pt-BR') + ",00";
                 total += parseInt(JSON.parse(xhr.responseText)['0'].valor);
+                cidade = capitalizeFirstLetter(JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE);
             }
     
         }
@@ -118,10 +119,8 @@ function res() {
                 document.getElementById('v6').innerHTML = "R$ " + (JSON.parse(xhr6.responseText)['0'].valor).toLocaleString('pt-BR') + ",00";
                 total += parseInt(JSON.parse(xhr6.responseText)['0'].valor);
                 setTimeout(function() {
-                    console.log(total);
                     document.getElementById('total').innerHTML = "R$ " + (total).toLocaleString('pt-BR') + ",00";
                     },500)
-                console.log(total);
             }
         
         }
@@ -131,4 +130,18 @@ function res() {
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
+};
+
+var op = ["---","---","---","---","---"];
+function alerta(){
+    op.unshift(cidade + ": " +  document.getElementById("op").value + ".");
+    
+    document.getElementById('pc1').innerHTML = op[0];
+    document.getElementById('pc2').innerHTML = op[1];
+    document.getElementById('pc3').innerHTML = op[2];
+    document.getElementById('pc4').innerHTML = op[3];
+    document.getElementById('pc5').innerHTML = op[4];
+    
+    window.alert('Obrigado! Seu comentário:\n"' + cidade + ": "+document.getElementById("op").value + '."' +"\n foi enviado a nosso fórum de discussões!");
+    
+};
