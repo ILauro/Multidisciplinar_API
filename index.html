@@ -5,14 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
-        <script src='script.js'></script>
+        
         
     </head>
     <body>
         <div id="container">
             <div id="titulo">
-                <h3 id="txt">🚧 Página em construção . . . 🚧</h3>
-                
+                <h3 id="txt">Bolsa Família - Vale do Caí 2020</h3>
             </div>
 
             <div id="call">
@@ -38,10 +37,79 @@
                 </select>
                 <button id="bt" onclick="res()">Pesquisar</button>
             </div>
+            
             <div id="main">
                 <h1 id="cidade">Feliz</h1>
-
+                <div id="info">
+                  <div id="cp1">
+                    <p >Código IBGE: </p> <span id="codigoIBGE"></span>
+                  </div>
+                  <div id="cp1">
+                    <p >População: </p> <span id="populacao"></span>
+                  </div>
+                  <div id="cp1">
+                    <p >UF: </p> <span id="uf"></span>
+                  </div>
+                  <div id="cp1">
+                    <p >País: </p> <span id="pais"></span>
+                  </div>
+                  
+    
+                </div>
+                <div class="table">
+                <table>
+                    <thead>
+                      <tr>
+                        <th style="text-align: left;">Mês</th>
+                        <th>Nº de beneficiados</th>
+                        <th>Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="font-size: 1.2em;">Janeiro</td>
+                        <td id="p1">---</td>
+                        <td id="v1">---</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1.2em;">Fevereiro</td>
+                        <td id="p2">---</td>
+                        <td id="v2">---</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1.2em;">Março</td>
+                        <td id="p3">---</td>
+                        <td id="v3">---</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1.2em;">Abril</td>
+                        <td id="p4">---</td>
+                        <td id="v4">---</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1.2em;">Maio</td>
+                        <td id="p5">---</td>
+                        <td id="v5">---</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 1.2em;">Junho</td>
+                        <td id="p6">---</td>
+                        <td id="v6">---</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td style="font-weight: bold; font-size: 1.1em;">Total:</td>
+                        <td id="total">---</td>
+                      </tr>
+                      
+                    </tbody>
+                    </table>
+                </div>
+                <div id="mapa">
+                  <img id="mapasrc">
+                </div>
             </div>
         </div>
     </body>
+    <script src='script.js'></script>
 </html>
