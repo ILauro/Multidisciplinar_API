@@ -134,7 +134,7 @@ function capitalizeFirstLetter(string) {
 
 var op = ["---","---","---","---","---"];
 function alerta(){
-    op.unshift(cidade + ": " +  document.getElementById("op").value + ".");
+    op.unshift(cidade + ": " +  document.getElementById("op").value);
     
     document.getElementById('pc1').innerHTML = op[0];
     document.getElementById('pc2').innerHTML = op[1];
@@ -142,6 +142,6 @@ function alerta(){
     document.getElementById('pc4').innerHTML = op[3];
     document.getElementById('pc5').innerHTML = op[4];
     
-    window.alert('Obrigado! Seu comentário:\n"' + cidade + ": "+document.getElementById("op").value + '."' +"\n foi enviado a nosso fórum de discussões!");
+    window.alert('Obrigado! Seu comentário:\n"' + cidade + ": "+document.getElementById("op").value +"\n foi enviado ao nosso fórum de discussões!");
     
 };
