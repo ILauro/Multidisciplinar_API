@@ -142,6 +142,6 @@ function alerta(){
     document.getElementById('pc4').innerHTML = op[3];
     document.getElementById('pc5').innerHTML = op[4];
     
-    window.alert('Obrigado! Seu comentário:\n"' + cidade + ": "+document.getElementById("op").value +'\n" foi enviado ao nosso fórum de discussões!');
+    window.alert('Obrigado! Seu comentário:\n"' + cidade + ": "+document.getElementById("op").value +'"\n foi enviado ao nosso fórum de discussões!');
     
 };
