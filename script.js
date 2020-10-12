@@ -133,7 +133,7 @@ function capitalizeFirstLetter(string) {
 };
 
 var op = ["---","---","---","---","---"];
-function alerta(){
+function comentario(){
     op.unshift(cidade + ": " +  document.getElementById("op").value);
     
     document.getElementById('pc1').innerHTML = op[0];

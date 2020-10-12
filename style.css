@@ -6,8 +6,6 @@ body,html{
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     height: 100%;
-    
-    text-transform: capitalize;
 }
 
 #container{
@@ -21,6 +19,7 @@ body,html{
     ". c c c . "
     ". m m m . "
     ". . . . . ";
+    
 }
 #titulo{
     grid-area: tt;
@@ -45,14 +44,13 @@ body,html{
     ". t t t ."
     ". i . m . "
     ". td . m . "
-    ". b b b . ";
+    ". b . . . ";
 }
 #feedback{
     grid-area: b;
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 5em;
+    flex-direction: column;
 }
 
 
