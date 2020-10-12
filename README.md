@@ -9,5 +9,5 @@ APRESENTAÇÃO DE DADOS:
   mostrando a quantidade de beneficiados e o valor de enviado a cada mês; no final é exibido o valor o total vigente ao bolsa família no ano de 2020 no município selecionado.
 
 INTERAÇÃO DA POPULAÇÃO:
-  O leitor pode deixar um comentário com sua opinião, que será enviado a um fórum de discussões no portal da transparência, onde serão analisados os comentários
-  em massa e utilizados para enviar uma sugestão ao governo de como melhorar o programa no futuro baseado no feedback da população.
+  O leitor pode deixar um comentário com sua opinião, que será enviado a um fórum de discussões, onde serão analisados os comentários
+  e utilizados para enviar uma sugestão ao governo de como melhorar o programa no futuro baseado no feedback da população.
